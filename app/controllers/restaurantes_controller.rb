@@ -46,7 +46,5 @@ class RestaurantesController < ApplicationController
     @restaurantes << Restaurante.find_by_especialidade(params[:teste])
     render :action => "index"
   end
-end
-
 
 end

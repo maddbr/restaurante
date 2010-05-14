@@ -46,13 +46,6 @@ class RestaurantesController < ApplicationController
     @restaurantes << Restaurante.find_by_especialidade(params[:teste])
     render :action => "index"
   end
-
-  def teste
-doc = Hpricot(open('http://twitter.com/maddbr'))
-items = doc / ".hentry .entry-content"
-items.each do |item|
-puts item.inner_text
-end
 end
 
 

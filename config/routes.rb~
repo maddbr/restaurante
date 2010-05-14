@@ -49,7 +49,7 @@ ActionController::Routing::Routes.draw do |map|
   #map.connect "inicio", :controller=>'restaurantes', :action=>'index'
   #map.connect ":teste", :controller=>'restaurantes', :action=>'busca'
 
-  #map.connect ':controller/:action/:id'
+  map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 
 end

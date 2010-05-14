@@ -6978,3 +6978,15 @@ Completed in 2637ms (View: 1, DB: 3) | 200 OK [http://localhost/twitter]
 
 Processing TwitterController#index (for 127.0.0.1 at 2010-05-13 20:57:16) [GET]
 Completed in 1887ms (View: 0, DB: 0) | 200 OK [http://localhost/twitter]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-13 22:32:04) [GET]
+
+SyntaxError (/home/rr1291/Desktop/restaurante/app/controllers/restaurantes_controller.rb:52: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
