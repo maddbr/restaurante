@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Um título</title>
+<%= stylesheet_link_tag 'scaffold' %>
+<%= javascript_include_tag :default %>
+  </head>
+  <body>
+    <%=menu_principal %>
+    <p style="color: red"><%= flash[:notice] %></p>
+    <%= yield %>
+  </body>
+</html>
+

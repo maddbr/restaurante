@@ -1,0 +1,16 @@
+class TwitterController < ApplicationController
+
+  def index
+
+	texto = []
+
+	doc = Hpricot(open('http://twitter.com/maddbr'))
+	items = doc / ".hentry .entry-content"
+	items.each do |item|
+	texto << "<li>#{item.inner_text}</li>"
+	end
+	render :text => texto
+  end
+
+
+end
